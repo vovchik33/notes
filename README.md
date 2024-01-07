@@ -1,3 +1,14 @@
+# INSTALL FFMPEG ON MACOS
+
+https://phoenixnap.com/kb/ffmpeg-mac
+
+```
+brew update
+brew upgrade
+brew install ffmpeg --HEAD
+ffmpeg
+```
+
 # CONVERT VIDEO
 
 ### Convert all files in directory
