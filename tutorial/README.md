@@ -8,3 +8,8 @@ Professional TypeScript Training by Matt Pocock [link](https://coursehunter.net/
 
 ### JavaScript: Interview Questions & Challenges
 [link](https://coursehunter.net/book/voprosy-i-zadachi-na-sobesedovanie-po-javascript)
+
+# ENGLISH
+
+### Grammar Phrasebook
+[link](https://coursehunter.net/book/frazovyy-spravochnik-po-grammatike)
