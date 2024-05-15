@@ -36,6 +36,9 @@ Host stash.cmpn.corp
 ```
 
 ### Change commits date
+
+More info: [link](https://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git)
+
 To change the dates of the last 4 commits:
 
 ```
