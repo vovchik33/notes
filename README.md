@@ -26,16 +26,3 @@ find *.mkv | sed 's:\ :\\\ :g'| sed 's/^/file /' > fl.txt; ffmpeg -f concat -i f
 
 ### Translate Video to other languages
 Description available by [link](https://github.com/ilyhalight/voice-over-translation?tab=readme-ov-file)
-
-# GIT
-
-### Support few ssh keys on the same machine
-switch to vovchik33
-```
-eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519
-```
-
-switch to other
-```
-eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa
-```
