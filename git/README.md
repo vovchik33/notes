@@ -11,7 +11,7 @@ switch to other
 eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa
 ```
 
-or configure all them together in 
+or configure all them together in ~/.ssh/config
 ```
 Host gitlab.com
   HostName gitlab.com
@@ -33,4 +33,4 @@ Host stash.cmpn.corp
   PubkeyAcceptedAlgorithms +ssh-rsa
   User git
   IdentityFile ~/.ssh/id_rsa_cmpn
-  ```
+```
