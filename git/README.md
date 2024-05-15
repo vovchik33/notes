@@ -62,3 +62,13 @@ If you want to see the original commit date in the rebase instruction list (Git 
 ```
 git config --add rebase.instructionFormat "[%ai] %s"
 ```
+
+### Collect number of commits during some period
+You can write this for a past time period from today on (day, month, year):
+```
+git shortlog -ns folder/subfolder --since="4 month ago"
+```
+And if you want to define the date range with dates, you can make it like this:
+```
+git shortlog -ns folder/subfolder --since="01 Okt 2020" --before="01 Feb 2021"
+```
