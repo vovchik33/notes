@@ -34,3 +34,28 @@ Host stash.cmpn.corp
   User git
   IdentityFile ~/.ssh/id_rsa_cmpn
 ```
+
+### Change commits date
+To change the dates of the last 4 commits:
+
+```
+git rebase -i HEAD~4
+
+```
+Edit the rebase as follows, inserting exec lines to modify dates as needed:
+
+```
+pick 4ca564e Do something
+exec git commit --amend --no-edit --date "1 Oct 2019 12:00:00 PDT"
+pick 1670583 Add another thing
+exec git commit --amend --no-edit --date "2 Oct 2019 12:00:00 PDT"
+pick b54021c Add some tests
+exec git commit --amend --no-edit --date "3 Oct 2019 12:00:00 PDT"
+pick e8f6653 Fix the broken thing
+exec git commit --amend --no-edit --date "4 Oct 2019 12:00:00 PDT"
+```
+
+If you want to see the original commit date in the rebase instruction list (Git 2.6+):
+```
+git config --add rebase.instructionFormat "[%ai] %s"
+```
